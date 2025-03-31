@@ -1,0 +1,152 @@
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fcff58;
+  color: #565656;
+}
+
+#sidebar {
+  width: 250px;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#logoBar {
+  width: 100%;
+  text-align: center;
+}
+
+#interviews h3 {
+  text-align: center;
+}
+
+#siteLogo {
+  width: 120px;
+  height: auto;
+  margin: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  width: 100%;
+  text-align: left;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #444;
+}
+
+main {
+  margin-left: 270px;
+  padding: 20px;
+  width: calc(100% - 270px);
+  max-width: 1200px;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Center images */
+.centered-large-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Personas Layout */
+.persona-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.persona {
+  text-align: center;
+  width: 45%;
+}
+
+.persona img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  #sidebar {
+    width: 200px;
+    padding: 10px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  main {
+    margin-left: 210px;
+    width: calc(100% - 210px);
+  }
+
+  .persona-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .persona {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 15px;
+  }
+
+  main {
+    margin-left: 0;
+    width: 100%;
+  }
+}
